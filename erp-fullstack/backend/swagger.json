@@ -1,0 +1,42 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "ERP API",
+        "version": "1.0.0",
+        "description": "API documentation for Customer & Sales Inquiry Management System"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:5000/api",
+            "description": "Local Development Server"
+        }
+    ],
+    "paths": {
+        "/auth/register": {
+            "post": {
+                "summary": "Register a new user",
+                "tags": [
+                    "Auth"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "User registered successfully"
+                    }
+                }
+            }
+        },
+        "/auth/login": {
+            "post": {
+                "summary": "Login user",
+                "tags": [
+                    "Auth"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "User logged in successfully"
+                    }
+                }
+            }
+        }
+    }
+}
